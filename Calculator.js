@@ -1,14 +1,17 @@
 function calculator(firstNumber, operator, secondNumber) {
-  if (operator === '+') {
-     console.log((firstNumber + secondNumber).toFixed(2))
+   let result;
+  
+    if (operator === '+') {
+     result = firstNumber + secondNumber;
 }  else if (operator === '-') {
-     console.log((firstNumber - secondNumber).toFixed(2));
-}  else if (operator === '*'){
-     console.log((firstNumber*secondNumber).toFixed(2));
+     result = firstNumber - secondNumber;
+}  else if (operator === '*') {
+      result = firstNumber * secondNumber;
 }  else if (operator === '/') {
-     console.log((firstNumber / secondNumber).toFixed(2)); 
+     result = firstNumber / secondNumber;
 }
 
+console.log(result.toFixed(2));
 
 }
 
