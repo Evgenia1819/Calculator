@@ -1,18 +1,6 @@
 function calculator(firstNumber, operator, secondNumber) {
-   let result;
-  
-    if (operator === '+') {
-     result = firstNumber + secondNumber;
-}  else if (operator === '-') {
-     result = firstNumber - secondNumber;
-}  else if (operator === '*') {
-      result = firstNumber * secondNumber;
-}  else if (operator === '/') {
-     result = firstNumber / secondNumber;
-}
-
-console.log(result.toFixed(2));
-
+   let result = eval(`${firstNumber} ${operator} ${secondNumber}`);
+   console.log(result);
 }
 
 calculator (5 ,'+', 10);
